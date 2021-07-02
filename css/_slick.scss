@@ -1,0 +1,176 @@
+.slider {
+  
+    width: 100%;
+   
+    
+}
+
+.slick-slide {
+  width: 100%;
+  
+  
+
+}
+
+
+
+.slider1{
+  background : linear-gradient(to bottom, #0c0c0ca4, #0505058a), url("../img/shutterstock-632817764.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+
+  h1{
+    font-size: 30px;
+    color: white;
+    font-family: 'Avenir LT Pro 45 Book';
+    font-weight: bold;
+  }
+
+  p{
+    font-size: 18px;
+    margin: 20px auto;
+    line-height: 1.4;
+    color: white;
+    font-family: 'Montserrat Regular';
+  }
+
+  a{
+    text-decoration: none;
+    color:white ;
+    border: 1px solid white;
+    padding: 20px 50px;
+  }
+ 
+}
+
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: 50px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: square;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 54px;
+    height: 11px;
+    margin: 0 5px;
+    padding: 0;
+    border: 1px solid white;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: white;
+    border: 2px white;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+  
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 0;
+    
+    
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: 1;
+  background: white;
+}
+
+.slick-current {
+  opacity: 1;
+}

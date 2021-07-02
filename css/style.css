@@ -1,0 +1,239 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body, html {
+  line-height: 1;
+  overflow-x: hidden;
+  font-family: 'mon-r';
+  scroll-behavior: smooth;
+  background-color: #AA6231;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner .banner-img {
+  margin: 20px auto;
+}
+
+.banner .banner-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.banner .banner-text p {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.banner .banner-text .banner-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner .banner-text .banner-inner .banner-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.banner .banner-text .banner-inner .banner-menu .sub {
+  padding: 9px 30px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  position: absolute;
+  top: 275px;
+  right: 104px;
+}
+
+.banner .banner-text .banner-inner .banner-menu .sub:hover {
+  background: #AA6231;
+  border: 1px solid white;
+}
+
+.banner .banner-text .banner-inner .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.banner .banner-text .banner-inner .hamburger h2 {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.banner .banner-text .banner-inner .hamburger svg {
+  z-index: 3;
+}
+
+.banner .banner-text .banner-inner .hamburger.open h2 {
+  z-index: 3;
+  position: relative;
+  left: -161px;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.banner .banner-text .banner-inner .hamburger .sidemenu {
+  position: absolute;
+  background-color: black;
+  list-style-type: none;
+  left: 300vw;
+  height: 565px;
+  width: 100%;
+  top: 0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 1;
+}
+
+.banner .banner-text .banner-inner .hamburger .sidemenu li {
+  margin: 10px auto;
+}
+
+.banner .banner-text .banner-inner .hamburger .sidemenu li a {
+  color: white;
+  font-size: 23px;
+  font-family: 'Courier New', Courier, monospace;
+  text-decoration: none;
+  padding: 30px auto;
+}
+
+.banner .banner-text .banner-inner .hamburger .open {
+  left: 0;
+  top: 0;
+}
+
+.banner .banner-text .main-text {
+  position: relative;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.banner .banner-text .main-text h1 {
+  font-size: 33px;
+  color: #fff;
+}
+
+.banner .banner-text .main-text p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.banner .banner-text .main-text::before {
+  position: absolute;
+  height: 1px;
+  background: black;
+  content: "";
+  top: 7px;
+  width: 100px;
+}
+
+.banner .banner-text .main-text::after {
+  position: absolute;
+  height: 1px;
+  background: black;
+  content: "";
+  top: 90px;
+  width: 100px;
+  right: 29px;
+}
+/*# sourceMappingURL=style.css.map */
